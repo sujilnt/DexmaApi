@@ -1,0 +1,15 @@
+{
+  "name": "OptimisedBuilding",
+  "version": "1.0.0",
+  "description": "A api for creating the reports",
+  "main": "index.js",
+  "author": "sujil anto",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel watch index.html"
+  },
+  "dependencies": {
+    "node-fetch": "^2.2.0",
+    "parcel-bundler": "^1.10.2"
+  }
+}

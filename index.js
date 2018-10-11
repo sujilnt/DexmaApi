@@ -1,11 +1,14 @@
-const fetch =require("node-fetch");
+var request = require("request");
 
-  const fetchdata={
-  headers:{
-    'Content-Type': 'application/json;charset=UTF-8',
-    'x-dexcell-token': 'cff216bbcfc55e1d5820',
-  }
-    };
-fetch("http://api.dexcell.com/v3/locations/#4/tags",fetchdata).then(function (data){
-  console.log("data",data);
+var options={
+ url : `https://api.dexcell.com/v3/locations/`,
+ headers: {
+     'x-dexcell-token' :"c0fd279531e5ab806330",
+     "Accept": "application/json"
+   }
+}
+request(options, function(error, response, body) {
+    console.log(body);
+    console.log(error);
 });
+// Working of Dexma APi

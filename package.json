@@ -9,7 +9,9 @@
     "dev": "parcel watch index.html"
   },
   "dependencies": {
+    "base-64": "^0.1.0",
     "node-fetch": "^2.2.0",
-    "parcel-bundler": "^1.10.2"
+    "parcel-bundler": "^1.10.2",
+    "request": "^2.88.0"
   }
 }

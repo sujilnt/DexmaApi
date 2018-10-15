@@ -6,8 +6,8 @@ const ObjectCreation=(obj, fromDate,toDate)=>{
     Obj.id=id;
     Obj.reference_devices=reference_devices;
     reference_devices.length ? reference_devices.map((row)=>{
-        console.log("inside console",row);
-        consumption(row.id,fromDate,toDate);
+       console.log("inside console",row.device.id);
+        consumption(name,row.device.id,fromDate,toDate,row.type);
     }): "";
     return Obj;
 

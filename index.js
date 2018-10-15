@@ -2,8 +2,8 @@ var request = require("request");
 //var json = require("./1.json");
 const {dateISOConversion} = require("isodate");
 date = new Date("2018-10-7");
-const fromDate = new Date("2018-10-7").toISOString();
-const toDate= new Date("2018-10-14").toISOString();
+const fromDate = new Date("2018-10-7").toISOString().replace(/[(:)|(.)]/g ,"%3A");
+const toDate= new Date("2018-10-14").toISOString().replace(/[(:)|(.)]/g ,"%3A");
 
 const {parsingObj} = require("./parsingObjects.js");
 const deviceArr=[];
@@ -15,7 +15,7 @@ var options={
    }
 }
 request(options, function(error, response, body) {
-    //const data = JSON.parse(body);
-    //console.log(parsingObj(data,fromDate,toDate));
+      const data = JSON.parse(body);
+      console.log(parsingObj(data,fromDate,toDate));
 });
 // Working of -Dexma APi

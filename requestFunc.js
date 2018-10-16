@@ -1,5 +1,5 @@
 const request = require("request");
-const requestFunc= (url,obj,callback)=>{
+const requestFunc= (url,obj={},callback)=>{
     const _url = url;
     const options={
         url : _url,

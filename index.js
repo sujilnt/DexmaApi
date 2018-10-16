@@ -7,5 +7,6 @@ const toDate = convertDate("2018-10-14");
 
 // url format
 const _url= `https://api.dexcell.com/v3/locations/?limit=500`;
-requestFunc(_url,fromDate,toDate,parsingObj);
+const params={fromDate,toDate};
+requestFunc(_url,params,parsingObj);
 

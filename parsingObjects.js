@@ -1,5 +1,6 @@
 var {ObjectCreation}= require("./ObjectCreation");
-const parsingObj=function(body,fromDate,toDate){
+const parsingObj=function(body,obj){
+    const {fromDate,toDate}=obj;
     const arrayOfDevices=[];
     console.log(body,fromDate,toDate);
     body.length? body.forEach((row)=>{
